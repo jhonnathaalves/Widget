@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="@string/txt_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp" tools:layout_editor_absoluteY="16dp"
+            android:id="@+id/txtNome" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="204dp"
+            android:layout_marginRight="204dp" android:textSize="18sp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            tools:layout_editor_absoluteY="35dp" tools:layout_editor_absoluteX="16dp" android:id="@+id/edtNome"/>
+    <Button
+            android:text="@string/txt_btn_processar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="81dp"
+            tools:layout_editor_absoluteX="16dp" android:id="@+id/btnProcessar" android:onClick="onClick"/>
+    <TextView
+            android:text="@string/txt_resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="150dp"
+            tools:layout_editor_absoluteX="203dp" android:id="@+id/txtResultado" android:textSize="18sp"/>
+
+</android.support.constraint.ConstraintLayout>
